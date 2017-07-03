@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>counter</title>
+</head>
+<body>
+	<h1>Incrementing the counter to 1</h1>
+   
+     <div id="demo" style="background-color:orange;color:white;padding:20px;text-align:center; font-size:42px;">
+     	
+
+     </div>
+
+   	<button type="button" onclick="myFunction()">Click me to Increment the  value </button>
+   
+	<script>
+      var count=0;
+     var counter=function()
+     {
+        count+=1;
+        return count;
+     };
+
+     function myFunction(){
+    document.getElementById("demo").innerHTML = counter();
+}
+
+	</script>
+</body>
+</html>
